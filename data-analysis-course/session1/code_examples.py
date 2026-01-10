@@ -19,9 +19,11 @@ print("✅ 라이브러리 임포트 완료!")
 # ============================================
 # Part 2: 데이터 로드 및 기본 탐색
 # ============================================
+print(os.getcwd())
+
 
 # 데이터 읽기
-df = pd.read_csv('../datasets/social_media_engagement.csv')
+df = pd.read_csv('datasets/social_media_engagement.csv')
 
 print("=" * 50)
 print("📊 데이터 미리보기")

@@ -21,7 +21,7 @@ plt.rcParams['font.size'] = 10
 print("✅ 라이브러리 임포트 완료!")
 
 # 데이터 로드
-df = pd.read_csv('../datasets/news_consumption.csv')
+df = pd.read_csv('./datasets/news_consumption.csv')
 print(f"📊 데이터 로드 완료: {df.shape[0]}행, {df.shape[1]}열")
 
 # ============================================

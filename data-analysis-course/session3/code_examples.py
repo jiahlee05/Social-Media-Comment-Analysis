@@ -13,7 +13,7 @@ print("Session 3: 통계 분석 기초")
 print("=" * 60)
 
 # 데이터 로드
-df = pd.read_csv('../datasets/advertising_experiment.csv')
+df = pd.read_csv('./datasets/advertising_experiment.csv')
 print(f"\n데이터 로드 완료: {df.shape}")
 print(df.head())
 

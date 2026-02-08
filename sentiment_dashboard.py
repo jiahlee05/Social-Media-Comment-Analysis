@@ -43,7 +43,7 @@ st.markdown("""
 
 @st.cache_data
 def load_sentiment_data():
-    file_path = r'c:\Python\antigravity\AI_leture_for_Ghent_University_\ai-canvas-data-course\datasets\social_media_comments.csv'
+    file_path = 'datasets/social_media_comments.csv'
     df = pd.read_csv(file_path)
     df['timestamp'] = pd.to_datetime(df['timestamp'])
     
@@ -62,7 +62,7 @@ def load_sentiment_data():
 
 @st.cache_data
 def load_engagement_data():
-    file_path = r'c:\Python\antigravity\AI_leture_for_Ghent_University_\ai-canvas-data-course\datasets\social_media_engagement.csv'
+    file_path = 'datasets/social_media_engagement.csv'
     if os.path.exists(file_path):
         return pd.read_csv(file_path)
     return None
